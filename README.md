@@ -41,13 +41,31 @@ Develop a Generative AI-powered robotic system for various minimally invasive su
 ## Results
 
 #### Original Image
-<img src="https://ibb.co/HTKM3Jyw" alt="Fracture bone image" width="400"/>
+![Original image](/result/original_image.jpeg)
 
 #### Generated Views
-<img src="https://ibb.co/r29c3bN0" alt="Alternate views" width="400"/>
+![Alternate views](/result/novel_3d_views%20(1).png)
+
 
 #### Depth Estimation
-<img src="https://ibb.co/4gFPdGZg" alt="Depth analysis" width="400"/>
+![Depth_analysis](/result/depth.png)
 
 #### 3D Bone Structure
-![Working](https://gifyu.com/image/bbMdZ)
+[3D bone view](/result/video.mp4)
+
+## **Tech Stack**
+### **Frontend**
+- **Visualization & UI/UX:** Next.js (React), Three.js, Tailwind CSS  
+
+### **Backend**
+- **Libraries & Frameworks:** NumPy, TensorFlow, U-Net, OpenCV, Scipy, MiDaS v2.1 Small, ONNX Runtime, Open3D, MeshLab, OpenPose, Three.js  
+
+### **Database**
+- PostgreSQL / MongoDB  
+
+### **Deployment**
+- Docker & Kubernetes  
+
+---
+
+This project focuses on AI-powered **3D Reconstruction** from X-ray images, improving medical imaging and diagnosis with deep learning, computational vision, and interactive 3D visualization.
