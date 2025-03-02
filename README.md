@@ -1,42 +1,50 @@
 # Bonecraft
 
 ## Problem statement
-Develop a Generative AI-powered robotic system for various minimally invasive surgeries that provides enhanced dexterity, haptic feedback, and 3D visualization to improve surgical precision.
+Traditional 2D X-rays limit diagnostic precision due to their lack of depth, slowing complex bone assessments, whereas our  3D reconstruction system transforms these images into interactive, high-resolution models using AI providing an alternative to costly CT scans and manual methods by offering a more affordable, and collaborative diagnostic tool.
 
 ## Approach
 
-### 1. **Frontend (User Interaction & Upload)**
-   - **User Authentication**
-     - Users can log in as individuals (verified specialists) or organizations (medical centers).
-   - **X-ray Image Upload**
-     - Supports file formats: `.png`, `.jpeg`, `.dicom`
-     - Provides an image preview before processing.
+## 1. Frontend (User Interaction & Upload)  
+The frontend serves as the user interface, enabling seamless interaction and data input for medical professionals.
 
-### 2. **Backend Processing (3D Reconstruction Pipeline)**  
-   - **Image Processing**
-     - Enhances image quality and extracts relevant bone structures.
-   - **Pose Estimation**
-     - Identifies bone orientation and joint positions.
-   - **Novel View Synthesis**
-     - Generates multiple perspectives computationally (without deep learning).
-   - **Depth Estimation**
-     - Computes depth and spatial relationships to create a realistic 3D structure.
-   - **Mesh Reconstruction**
-     - Converts the depth map into a low-poly 3D mesh.
-   - **Rendering and Exporting**
-     - Displays and saves the 3D model.
+- **User Authentication**  
+  - Supports login for:  
+    - **Individuals**: Verified specialists (e.g., radiologists, surgeons).  
+    - **Organizations**: Medical centers or healthcare institutions.  
+  - Ensures secure access with role-based permissions.
 
-### 3. **Generative AI Enhancement**
-   - **Gen AI Upscaling**
-     - Enhances the 3D model resolution.
-   - **Existing 3D Renders**
-     - Uses existing datasets to fine-tune AI models for better accuracy.
+- **X-ray Image Upload**  
+  - **Supported Formats**: `.png`, `.jpeg`, `.dicom`.  
+  - **Features**: Real-time image preview before processing, allowing users to verify uploads.  
+  - **Objective**: Provides an intuitive entry point for uploading patient X-rays.
 
-### 4. **Final Output**
-   - Interactive 3D Model with:
-     - Zooming and rotation
-     - Annotation and collaboration features
-     - Reporting tools for medical professionals.
+## 2. Backend Processing (3D Reconstruction Pipeline)  
+The backend powers the core 3D reconstruction process, leveraging advanced algorithms and computational techniques.
+
+- **Image Processing**  
+  - Enhances image quality (e.g., noise reduction, contrast adjustment).  
+  - Extracts relevant bone structures for further analysis.  
+
+- **Pose Estimation**  
+  - Identifies bone orientation and joint positions using the YOLOv7pose model.  
+  - Offers real-time accuracy without deep learning overhead, optimizing performance.  
+
+- **Novel View Synthesis**  
+  - Generates multiple computational perspectives (e.g., rotations, flips) from a single X-ray.  
+  - Achieved without deep learning, ensuring efficiency and scalability.  
+
+- **Depth Estimation**  
+  - Computes depth maps and spatial relationships to construct realistic 3D structures.  
+  - Utilizes point cloud generation as a foundational step.  
+
+- **Mesh Reconstruction**  
+  - Converts depth maps into low-poly 3D meshes for rendering.  
+  - Balances detail and computational feasibility.  
+
+- **Rendering and Exporting**  
+  - Displays interactive 3D models with dynamic viewing options.  
+  - Allows saving of models in compatible formats for further use.
 
 ## Results
 
