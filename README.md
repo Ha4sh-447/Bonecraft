@@ -59,7 +59,7 @@ The backend powers the core 3D reconstruction process, leveraging advanced algor
 ![Depth_analysis](/result/depth.png)
 
 #### 3D Bone Structure
-![3D bone view](/[result/point_cloud.gif](https://github.com/Ha4sh-447/Bonecraft/blob/main/result/point_cloud.gif))
+![3D bone view](/result/point_cloud.gif)
 
 ## **Tech Stack**
 ### **Frontend**
