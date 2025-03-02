@@ -41,7 +41,7 @@ Develop a Generative AI-powered robotic system for various minimally invasive su
 ## Results
 
 #### Original Image
-![Original image](/result/original_image.jpeg)
+<img src="/result/original_image.jpeg" alt="Original image" width="50%">
 
 #### Generated Views
 ![Alternate views](/result/novel_3d_views%20(1).png)
